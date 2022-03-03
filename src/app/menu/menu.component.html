@@ -3,14 +3,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado" >
       <ul class="navbar-nav mr-auto d-flex align-items-center">
         <li class="nav-item active">
-          <img src="http://pm1.narvii.com/6509/c73d275687ddb4a49c285bcad88764344860cbd7_00.jpg" alt="Imagem do Usuario" width = "50px" 
+          <img src="{{foto}}" alt="Foto do User" width = "50px" 
           height="50px" class = "img-fluid rounded-circle">
         </li>
         <li class="nav-item pl-3">
-          <p class ="m-0 font-weight-bold text-white fs-16">Nome do Usuario</p>
+          <p class ="m-0 font-weight-bold text-white fs-16">{{nome}}</p>
         </li>
         <li class="nav-item pl-3">
             <a href=""></a>
@@ -19,11 +19,10 @@
          </ul>
 
          <ul class="navbar-nav ml-auto d-flex align-items-center">
-             <li class = "nav-item pl-3">
-                <a class ="m-0 font-weight-bold text-white fs-16"> Sair <i class="fa fa-sign-out"
-                aria-hidden = "true"></i></a>
-             </li>
-         </ul>
-
-    </div>
-  </nav>
+          <li class="nav-item pl-3">
+            <a (click)='sair()' class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+    
+      </div>
+    </nav>
